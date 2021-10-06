@@ -1,0 +1,22 @@
+article {
+
+}
+
+body {
+  background-color: #494545;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  text-align: right;
+}
+
+.title {
+  background-repeat: no-repeat;
+}
+p img{
+  width: 100%;
+}
