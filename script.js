@@ -15,12 +15,16 @@ const images = {
   'Arsenal': 'C:\Users\Jsomu\OneDrive\Pictures\Screenshots\Screenshot(234).png',
 }
 // const firstPlace = () => {
-  fetch('http://api.football-data.org/v2/competitions/2021/standings')
+fetch('http://api.football-data.org/v2/competitions/2021/standings', {
+  headers: {
+    'X-Auth-Token': '49f98870ef244fa5b61b175735463b0c'
+  }
+})
     .then((res) => {
-      return res.json()
-    })
+  return res.json()
+  })
     .then((resJSON) => {
-      console.log(resJSON.competition)
+      console.log(resJSON.standings)
     })
 // };
 // firstPlace();

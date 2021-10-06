@@ -1,27 +1,22 @@
 article {
+  
 }
 
-body {
+.background {
   background-image: url("https://s.abcnews.com/images/Sports/WireAP_0692e035b79440cdad96070d3c8294ba_16x9_992.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 75px, center;
-  overflow: scroll;
+  background-size: 100%;
 }
 
 h2 {
   text-align: center;
 }
 
-h5 {
-  display: inline;
-  margin-left: 100px;
+header {
+  text-align: center;
 }
 
-.main {
- 
-  
-}
-p img{
-  width: 100%;
+section {
+  margin-top: 700px;
 }
