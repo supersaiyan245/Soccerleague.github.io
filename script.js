@@ -11,9 +11,6 @@ fetch('http://api.football-data.org/v2/competitions/2021/standings', {
     return res.json()
   })
   .then((resJSON) => {
-    // firstPlace(resJSON);
-    // secondPlace(resJSON);
-    // console.log(resJSON.standings)
   })
 const images = {
   'Chelsea FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmC4qhtmPhNFg41YUD9PAYCWloP51x1r2XVw&usqp=CAU',
@@ -40,7 +37,7 @@ const image4 = document.createElement('img');
 const team5 = document.getElementById('team5');
 const image5 = document.createElement('img')
 
-let position = resJSON.standings[0].table;
+let position = resJSON.standings[0].table
 let rank1 = position[0].team.name
 let rank2 = position[1].team.name
 let rank3 = position[2].team.name
