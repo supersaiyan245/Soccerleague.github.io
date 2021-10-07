@@ -15,6 +15,7 @@ Write functions for a first place to a 5th place team
       determineFirstPlace(resJSON);
       determineSecondPlace(resJSON);
       determineThirdPlace(resJSON);
+      determineFourthPlace(resJSON)
       console.log(resJSON);
     })
 
@@ -162,40 +163,40 @@ const determineThirdPlace = (league) => {
 };
 const determineFourthPlace = (league) => {
   let position = league.standings[0].table;
-  let r = position[2].team.name;
-  if (r === "Chelsea FC") {
-    image3.src = images['Chelsea FC']
-    team3.append(image3)
-  } else if (r === "Liverpool FC") {
-    image3.src = images['Liverpool FC']
-    team3.append(image3);
-  } else if (r === 'Manchester City FC') {
-    image3.src = images['Manchester City FC']
-    team3.prepend(image3)
-  } else if (r === 'Manchester United FC') {
-    image3.src = images['Manchester United FC']
-    team3.prepend(image3)
-  } else if (r === 'Everton FC') {
-    image3.src = images['Everton FC']
-    team3.prepend(image3)
-  } else if (r === 'Brighton & Hove Albion FC') {
-    image3.src = images['Brighton & Hove Albion FC']
-    team3.prepend(image3)
-  } else if (r === 'Brentford FC') {
-    image3.src = images['Brentford FC']
-    team3.prepend(image3)
-  } else if (r === 'Tottenham Hotspur FC') {
-    image3.src = images['Tottenham FC']
-    team3.prepend(image3)
-  } else if (r === 'West Ham United FC') {
-    image3.src = images['West Ham United FC']
-    team3.prepend(image3)
-  } else if (r === 'Aston Villa FC') {
-    image3.src = images['Aston Villa FC']
-    team3.prepend(image3)
-  } else if (r === 'Arsenal FC') {
-    image3.src = images['Arsenal FC']
-    team3.prepend(image3)
+  let rank4 = position[3].team.name;
+  if (rank4 === "Chelsea FC") {
+    image4.src = images['Chelsea FC']
+    team4.append(image4)
+  } else if (rank4 === "Liverpool FC") {
+    image4.src = images['Liverpool FC']
+    team4.append(image4);
+  } else if (rank4 === 'Manchester City FC') {
+    image4.src = images['Manchester City FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Manchester United FC') {
+    image4.src = images['Manchester United FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Everton FC') {
+    image4.src = images['Everton FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Brighton & Hove Albion FC') {
+    image4.src = images['Brighton & Hove Albion FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Brentford FC') {
+    image4.src = images['Brentford FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Tottenham Hotspur FC') {
+    image4.src = images['Tottenham FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'West Ham United FC') {
+    image4.src = images['West Ham United FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Aston Villa FC') {
+    image4.src = images['Aston Villa FC']
+    team4.prepend(image4)
+  } else if (rank4 === 'Arsenal FC') {
+    image4.src = images['Arsenal FC']
+    team4.prepend(image4)
   }
 };
 // fetch('http://api.football-data.org/v2/competitions/2021/standings', {
