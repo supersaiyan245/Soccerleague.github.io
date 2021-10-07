@@ -36,8 +36,10 @@ const images = {
   
 const team1 = document.getElementById('team1');
 const image1 = document.createElement('img');
+const teamName1 = document.querySelector('.tteam1');
 const team2 = document.getElementById('team2');
 const image2 = document.createElement('img');
+const teamName2 = document.querySelector('.tteam2')
 const team3 = document.getElementById('team3');
 const image3 = document.createElement('img');
 const team4 = document.getElementById('team4');
@@ -49,6 +51,7 @@ const image5 = document.createElement('img')
 let determineFirstPlace = (league) => {
   let position = league.standings[0].table;
   let rank1 = position[0].team.name;
+  teamName1.innerText = position[0].team.name;
   if (rank1 = "Chelsea FC") {
     image1.src = images['Chelsea FC']
     team1.prepend(image1)
@@ -240,47 +243,3 @@ const determineFifthPlace = (league) => {
     team5.prepend(image5)
   }
 };
-// fetch('http://api.football-data.org/v2/competitions/2021/standings', {
-//   headers: {
-//     'X-Auth-Token': '49f98870ef244fa5b61b175735463b0c'
-//   }
-// })
-//   .then((res) => {
-//     return res.json()
-//   })
-//   .then((resJSON) => {
-//     determineFirstPlace(ra);
-//     // secondPlace(resJSON);
-//     console.log(resJSON.standings)
-//   })
-
-// const secondPlace = () => {
-//   for (team in resJSON.standings[0].table) {
-//     if 
-// }
-
-// const thirdPlace = () => {
-//   for (team in resJSON.standings[0].table) {
-//     if 
-// }
-
-// const fourthPlace = () => {
-//   for (team in resJSON.standings[0].table) {
-//     if 
-// }
-
-// const fifthPlace = () => {
-//   for (team in resJSON.standings[0].table) {
-//     if 
-// }
-// };
-// firstPlace();
-//   fetch('http://api.football-data.org/v2/competitions/2021/standings')
-//     .then((res) => {
-//       return res.json()
-//     })
-//     .then((resJSON) => {
-
-//     }
-    
-// const inputTeams = (team)
