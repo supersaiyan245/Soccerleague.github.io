@@ -94,7 +94,7 @@ let determineFirstPlace = (league) => {
 const determineSecondPlace = (league) => {
   let position = league.standings[0].table;
   let rank2 = position[1].team.name;
-  
+  teamName2.innerText = position[1].team.name;
   if (rank2 === "Chelsea FC") {
     image2.src = images['Chelsea FC']
     team2.append(image2)
@@ -134,6 +134,7 @@ const determineSecondPlace = (league) => {
 const determineThirdPlace = (league) => {
   let position = league.standings[0].table;
   let rank3 = position[2].team.name;
+  teamName3.innerText = position[2].team.name;
   if (rank3 === "Chelsea FC") {
     image3.src = images['Chelsea FC']
     team3.append(image3)
@@ -173,6 +174,7 @@ const determineThirdPlace = (league) => {
 const determineFourthPlace = (league) => {
   let position = league.standings[0].table;
   let rank4 = position[3].team.name;
+  teamName4.innerText = position[3].team.name;
   if (rank4 === "Chelsea FC") {
     image4.src = images['Chelsea FC']
     team4.append(image4)
@@ -212,6 +214,7 @@ const determineFourthPlace = (league) => {
 const determineFifthPlace = (league) => {
   let position = league.standings[0].table;
   let rank5 = position[4].team.name;
+  teamName5.innerText = position[4].team.name;
   if (rank5 === "Chelsea FC") {
     image5.src = images['Chelsea FC']
     team5.append(image5)
