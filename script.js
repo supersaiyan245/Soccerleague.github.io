@@ -15,7 +15,8 @@ Write functions for a first place to a 5th place team
       determineFirstPlace(resJSON);
       determineSecondPlace(resJSON);
       determineThirdPlace(resJSON);
-      determineFourthPlace(resJSON)
+      determineFourthPlace(resJSON);
+      
       console.log(resJSON);
     })
 
@@ -24,11 +25,11 @@ const images = {
   'Liverpool FC': 'https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/18/thumb_117150_default_news_size_5.jpeg',
   'Manchester City FC': 'https://c.ndtvimg.com/2021-01/74bujqo_manchester-city-celebrate-afp_625x300_29_January_21.jpg',
   'Manchester United FC': 'https://manchesterunitedlatestnews.com/wp-content/uploads/2020/07/Manchester-United-predicted-line-up-vs-West-Ham-Starting-XI-for-today.jpg',
-  'Everton FC': 'tinyurl.com/y3pecfmc',
-  'Brighton & Hove Albion FC': 'tinyurl.com/sjrvbhry',
+  'Everton FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8QZbkv8H38bjUjlHPikJhnJ_N8Wegsgoww&usqp=CAU',
+  'Brighton & Hove Albion FC': 'https://www.theargus.co.uk/resources/images/13072419/?type=responsive-gallery',
   'Brentford FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdzzCWdRP6cO9Q3J-s3cUP2d2NfXEYMxAwJg&usqp=CAU',
   'Tottenham FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD5vakbalW15znhIFZQHd2_jyuBj_ccYUt_g&usqp=CAU',
-  'West Ham United FC': 'tinyurl.com/4uvp3jua',
+  'West Ham United FC': 'https://www.whufc.com/sites/default/files/inline-images/fixtures726_0.jpg',
   'Aston Villa FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTC9pmLeAWVV5NpRNgk6yiGgrPSt0NaYuKQ&usqp=CAU',
   'Arsenal FC': 'https://s.hs-data.com/bilder/teamfotos/640x360/555.jpg',
 }
@@ -83,10 +84,10 @@ let determineFirstPlace = (league) => {
     team1.prepend(image1)
   }
 };
-let rank2;
+
 const determineSecondPlace = (league) => {
   let position = league.standings[0].table;
-  rank2 = position[1].team.name;
+  let rank2 = position[1].team.name;
   if (rank2 === "Chelsea FC") {
     image2.src = images['Chelsea FC']
     team2.append(image2)
@@ -161,6 +162,7 @@ const determineThirdPlace = (league) => {
     team3.prepend(image3)
   }
 };
+
 const determineFourthPlace = (league) => {
   let position = league.standings[0].table;
   let rank4 = position[3].team.name;
@@ -197,6 +199,45 @@ const determineFourthPlace = (league) => {
   } else if (rank4 === 'Arsenal FC') {
     image4.src = images['Arsenal FC']
     team4.prepend(image4)
+  }
+};
+
+const determineFifthPlace = (league) => {
+  let position = league.standings[0].table;
+  let rank5 = position[4].team.name;
+  if (rank5 === "Chelsea FC") {
+    image5.src = images['Chelsea FC']
+    team5.append(image5)
+  } else if (rank5 === "Liverpool FC") {
+    image5.src = images['Liverpool FC']
+    team5.append(image5);
+  } else if (rank5 === 'Manchester City FC') {
+    image5.src = images['Manchester City FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Manchester United FC') {
+    image5.src = images['Manchester United FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Everton FC') {
+    image5.src = images['Everton FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Brighton & Hove Albion FC') {
+    image5.src = images['Brighton & Hove Albion FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Brentford FC') {
+    image5.src = images['Brentford FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Tottenham Hotspur FC') {
+    image5.src = images['Tottenham FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'West Ham United FC') {
+    image5.src = images['West Ham United FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Aston Villa FC') {
+    image5.src = images['Aston Villa FC']
+    team5.prepend(image5)
+  } else if (rank5 === 'Arsenal FC') {
+    image5.src = images['Arsenal FC']
+    team5.prepend(image5)
   }
 };
 // fetch('http://api.football-data.org/v2/competitions/2021/standings', {
