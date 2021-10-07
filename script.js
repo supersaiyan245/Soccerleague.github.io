@@ -4,7 +4,7 @@ Write functions for a first place to a 5th place team
 */
 const images = {
   'Chelsea FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmC4qhtmPhNFg41YUD9PAYCWloP51x1r2XVw&usqp=CAU',
-  'Liverpool FC': 'C:\Users\Jsomu\OneDrive\Pictures\Screenshots\Screenshot(221).png',
+  'Liverpool FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcJlhw9OBJjO4HFamzU8VP9xRHkgr87DX1QQ&usqp=CAU',
   'Manchester City FC': 'C:\Users\Jsomu\OneDrive\Pictures\Screenshots\Screenshot(222).png',
   'Manchester United': 'C:\Users\Jsomu\OneDrive\Pictures\Screenshots\Screenshot(223).png',
   'Everton FC': 'C:\Users\Jsomu\OneDrive\Pictures\Screenshots\Screenshot(224).png',
@@ -16,12 +16,20 @@ const images = {
   'Arsenal FC': 'C:\Users\Jsomu\OneDrive\Pictures\Screenshots\Screenshot(234).png',
 }
   
-const team1 = document.getElementById('team1')
-const image1 = document.createElement('img')
-const team2 = document.getElementById('team2')
-const team3 = document.getElementById('team3')
-const team4 = document.getElementById('team4')
-const team5 = document.getElementById('team5')
+const team1 = document.getElementById('team1');
+const image1 = document.createElement('img');
+const team2 = document.getElementById('team2');
+const image2 = document.createElement('img');
+image2.className('image2');
+const team3 = document.getElementById('team3');
+const image3 = document.createElement('img');
+image3.className('image3')
+const team4 = document.getElementById('team4');
+const image4 = document.createElement('img');
+image4.className('image4')
+const team5 = document.getElementById('team5');
+const image5 = document.createElement('img')
+image5.className('image5')
 const firstPlace = (resJSON) => {
   for (squad in resJSON.standings[0].table[0]) {
     if (resJSON.standings[0].table[0][squad].name = 'Chelsea FC') {
