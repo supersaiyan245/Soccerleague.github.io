@@ -39,13 +39,16 @@ const image1 = document.createElement('img');
 const teamName1 = document.querySelector('.tteam1');
 const team2 = document.getElementById('team2');
 const image2 = document.createElement('img');
-const teamName2 = document.querySelector('.tteam2')
+const teamName2 = document.querySelector('.tteam2');
 const team3 = document.getElementById('team3');
 const image3 = document.createElement('img');
+const teamName3 = document.querySelector('.tteam3');
 const team4 = document.getElementById('team4');
 const image4 = document.createElement('img');
+const teamName4 = document.querySelector('.tteam4')
 const team5 = document.getElementById('team5');
-const image5 = document.createElement('img')
+const image5 = document.createElement('img');
+const teamName5 = document.querySelector('.tteam5');
 
 
 let determineFirstPlace = (league) => {
@@ -91,6 +94,7 @@ let determineFirstPlace = (league) => {
 const determineSecondPlace = (league) => {
   let position = league.standings[0].table;
   let rank2 = position[1].team.name;
+  
   if (rank2 === "Chelsea FC") {
     image2.src = images['Chelsea FC']
     team2.append(image2)
