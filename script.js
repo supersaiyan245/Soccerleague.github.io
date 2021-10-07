@@ -40,42 +40,47 @@ const image4 = document.createElement('img');
 const team5 = document.getElementById('team5');
 const image5 = document.createElement('img')
 
-const firstPlace = (resJSON) => {
-  for (squad in resJSON.standings[0].table[0]) {
-    if (resJSON.standings[0].table[0][squad].name = "Chelsea FC") {
-      image1.src = images['Chelsea FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "Liverpool FC") {
-      image1.src = images['Liverpool FC']
-      team1.prepend(image1);
-    } else if (resJSON.standings[0].table[0][squad].name = "Manchester City FC") {
-      image1.src = images['Manchester City FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "Manchester United FC") {
-      image1.src = images['Manchester United FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "Everton FC") {
-      image1.src = images['Everton FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "Brighton & Hove Albion FC") {
-      image1.src = images['Brighton & Hove Albion FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "Brentford FC") {
-      image1.src = images['Brentford FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "Tottenham Hotspur FC") {
-      image1.src = images['Tottenham FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = "West Ham United FC") {
-      image1.src = images['West Ham United FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = 'Aston Villa FC') {
-      image1.src = images['Aston Villa FC']
-      team1.prepend(image1)
-    } else if (resJSON.standings[0].table[0][squad].name = 'West Ham United FC') {
-      image1.src = images['West Ham United FC']
-      team1.prepend(image1)
-    }
+let position = resJSON.standings[0].table;
+let rank1 = position[0].team.name
+let rank2 = position[1].team.name
+let rank3 = position[2].team.name
+let rank4 = position[3].team.name
+let rank5 = position[4].team.name
+
+let determineFirstPlace = (rank1) => {
+  if (rank1 = "Chelsea FC") {
+    image1.src = images['Chelsea FC']
+    team1.prepend(image1)
+  } else if (rank1 = "Liverpool FC") {
+    image1.src = images['Liverpool FC']
+    team1.prepend(image1);
+  } else if (rank1 = "Manchester City FC") {
+    image1.src = images['Manchester City FC']
+    team1.prepend(image1)
+  } else if (rank1 = "Manchester United FC") {
+    image1.src = images['Manchester United FC']
+    team1.prepend(image1)
+  } else if (rank1 = "Everton FC") {
+    image1.src = images['Everton FC']
+    team1.prepend(image1)
+  } else if (rank1 = "Brighton & Hove Albion FC") {
+    image1.src = images['Brighton & Hove Albion FC']
+    team1.prepend(image1)
+  } else if (rank1 = "Brentford FC") {
+    image1.src = images['Brentford FC']
+    team1.prepend(image1)
+  } else if (rank1 = "Tottenham Hotspur FC") {
+    image1.src = images['Tottenham FC']
+    team1.prepend(image1)
+  } else if (rank1 = "West Ham United FC") {
+    image1.src = images['West Ham United FC']
+    team1.prepend(image1)
+  } else if (rank1 = 'Aston Villa FC') {
+    image1.src = images['Aston Villa FC']
+    team1.prepend(image1)
+  } else if (rank1 = 'West Ham United FC') {
+    image1.src = images['West Ham United FC']
+    team1.prepend(image1)
   }
 };
 
@@ -126,8 +131,8 @@ fetch('http://api.football-data.org/v2/competitions/2021/standings', {
     return res.json()
   })
   .then((resJSON) => {
-    firstPlace(resJSON);
-    secondPlace(resJSON);
+    determineFirstPlace(rank1);
+    // secondPlace(resJSON);
     console.log(resJSON.standings)
   })
 
