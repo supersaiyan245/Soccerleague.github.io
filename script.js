@@ -16,7 +16,7 @@ Write functions for a first place to a 5th place team
       determineSecondPlace(resJSON);
       determineThirdPlace(resJSON);
       determineFourthPlace(resJSON);
-      
+      determineFifthPlace(resJSON);
       console.log(resJSON);
     })
 
