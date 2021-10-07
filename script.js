@@ -160,7 +160,44 @@ const determineThirdPlace = (league) => {
     team3.prepend(image3)
   }
 };
-
+const determineFourthPlace = (league) => {
+  let position = league.standings[0].table;
+  let r = position[2].team.name;
+  if (r === "Chelsea FC") {
+    image3.src = images['Chelsea FC']
+    team3.append(image3)
+  } else if (r === "Liverpool FC") {
+    image3.src = images['Liverpool FC']
+    team3.append(image3);
+  } else if (r === 'Manchester City FC') {
+    image3.src = images['Manchester City FC']
+    team3.prepend(image3)
+  } else if (r === 'Manchester United FC') {
+    image3.src = images['Manchester United FC']
+    team3.prepend(image3)
+  } else if (r === 'Everton FC') {
+    image3.src = images['Everton FC']
+    team3.prepend(image3)
+  } else if (r === 'Brighton & Hove Albion FC') {
+    image3.src = images['Brighton & Hove Albion FC']
+    team3.prepend(image3)
+  } else if (r === 'Brentford FC') {
+    image3.src = images['Brentford FC']
+    team3.prepend(image3)
+  } else if (r === 'Tottenham Hotspur FC') {
+    image3.src = images['Tottenham FC']
+    team3.prepend(image3)
+  } else if (r === 'West Ham United FC') {
+    image3.src = images['West Ham United FC']
+    team3.prepend(image3)
+  } else if (r === 'Aston Villa FC') {
+    image3.src = images['Aston Villa FC']
+    team3.prepend(image3)
+  } else if (r === 'Arsenal FC') {
+    image3.src = images['Arsenal FC']
+    team3.prepend(image3)
+  }
+};
 // fetch('http://api.football-data.org/v2/competitions/2021/standings', {
 //   headers: {
 //     'X-Auth-Token': '49f98870ef244fa5b61b175735463b0c'
