@@ -25,7 +25,7 @@ const images = {
   'Liverpool FC': 'https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/18/thumb_117150_default_news_size_5.jpeg',
   'Manchester City FC': 'https://c.ndtvimg.com/2021-01/74bujqo_manchester-city-celebrate-afp_625x300_29_January_21.jpg',
   'Manchester United FC': 'https://manchesterunitedlatestnews.com/wp-content/uploads/2020/07/Manchester-United-predicted-line-up-vs-West-Ham-Starting-XI-for-today.jpg',
-  'Everton FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8QZbkv8H38bjUjlHPikJhnJ_N8Wegsgoww&usqp=CAU',
+  'Everton FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1J7LJD-8G7N-nQQa14SqpBTV9wfWF8CQZ1g&usqp=CAU',
   'Brighton & Hove Albion FC': 'https://www.theargus.co.uk/resources/images/13072419/?type=responsive-gallery',
   'Brentford FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdzzCWdRP6cO9Q3J-s3cUP2d2NfXEYMxAwJg&usqp=CAU',
   'Tottenham FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD5vakbalW15znhIFZQHd2_jyuBj_ccYUt_g&usqp=CAU',
