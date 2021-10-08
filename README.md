@@ -53,5 +53,5 @@ MVP/Post MVP
   <ul>
     <li>Used HTML, CSS, and JavaScript.</li>
     <li>Styled page using Flexbox</li>
-    <li>Responsive design used for other devices
+    <li>Responsive design used for other devices</li>
   </ul>
