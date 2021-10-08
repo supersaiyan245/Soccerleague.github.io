@@ -1,16 +1,22 @@
 .background {
   background-image: url("https://s.abcnews.com/images/Sports/WireAP_0692e035b79440cdad96070d3c8294ba_16x9_992.jpg");
   background-repeat: no-repeat;
-  background-position-y: 75px, center;
+  background-position-y: 150px, center;
   background-size: 100%;
 }
 
 h2 {
   text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
 }
 
 h3 {
-  padding: 100px;
+  padding-top: 200px;
+}
+
+h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 header {
@@ -20,6 +26,7 @@ header {
 img {
   width: 700px;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 section {
@@ -32,5 +39,7 @@ section {
   display: flex;
 }
 
-
+@media screen and (max-width: 500px) {
+  
+}
 
