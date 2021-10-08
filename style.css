@@ -9,11 +9,22 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  padding: 100px;
+}
+
 header {
   text-align: center;
 }
 
 section {
-  margin-top: 1000px;
+  margin-top: 1200px;
   text-align: center;
+  ;
 }
+
+p .img {
+  max-width: 300px;
+  display: flex;
+}
+
