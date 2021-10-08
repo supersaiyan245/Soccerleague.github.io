@@ -48,3 +48,10 @@ API and Data Sample
 
 Wireframes
 https://www.figma.com/file/jFdd1ghwnxtT2k32hLq7Uv/Untitled?node-id=0%3A1
+
+MVP/Post MVP
+  <ul>
+    <li>Used HTML, CSS, and JavaScript.</li>
+    <li>Styled page using Flexbox</li>
+    <li>Responsive design used for other devices
+  </ul>
