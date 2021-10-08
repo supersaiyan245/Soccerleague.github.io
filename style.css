@@ -40,6 +40,23 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-  
+  .background {
+    background-size: contain;
+    background-position-y: 150px center;
+    width: 100%;
+  }
+  h3 {
+    padding-top: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  img {
+    align-items: center;
+    max-width: 500px;
+  }
+  section {
+    margin-top: 300px;
+  }
 }
 
