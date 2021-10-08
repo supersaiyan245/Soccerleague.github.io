@@ -55,37 +55,37 @@ let determineFirstPlace = (league) => {
   let position = league.standings[0].table;
   let rank1 = position[0].team.name;
   teamName1.innerText = position[0].team.name;
-  if (rank1 = "Chelsea FC") {
+  if (rank1 === "Chelsea FC") {
     image1.src = images['Chelsea FC']
     team1.prepend(image1)
-  } else if (rank1 = "Liverpool FC") {
+  } else if (rank1 === "Liverpool FC") {
     image1.src = images['Liverpool FC']
     team1.prepend(image1);
-  } else if (rank1 = "Manchester City FC") {
+  } else if (rank1 === "Manchester City FC") {
     image1.src = images['Manchester City FC']
     team1.prepend(image1)
-  } else if (rank1 = "Manchester United FC") {
+  } else if (rank1 === "Manchester United FC") {
     image1.src = images['Manchester United FC']
     team1.prepend(image1)
-  } else if (rank1 = "Everton FC") {
+  } else if (rank1 === "Everton FC") {
     image1.src = images['Everton FC']
     team1.prepend(image1)
-  } else if (rank1 = "Brighton & Hove Albion FC") {
+  } else if (rank1 === "Brighton & Hove Albion FC") {
     image1.src = images['Brighton & Hove Albion FC']
     team1.prepend(image1)
-  } else if (rank1 = "Brentford FC") {
+  } else if (rank1 === "Brentford FC") {
     image1.src = images['Brentford FC']
     team1.prepend(image1)
-  } else if (rank1 = "Tottenham Hotspur FC") {
+  } else if (rank1 === "Tottenham Hotspur FC") {
     image1.src = images['Tottenham FC']
     team1.prepend(image1)
-  } else if (rank1 = "West Ham United FC") {
+  } else if (rank1 === "West Ham United FC") {
     image1.src = images['West Ham United FC']
     team1.prepend(image1)
-  } else if (rank1 = 'Aston Villa FC') {
+  } else if (rank1 === 'Aston Villa FC') {
     image1.src = images['Aston Villa FC']
     team1.prepend(image1)
-  } else if (rank1 = 'West Ham United FC') {
+  } else if (rank1 === 'West Ham United FC') {
     image1.src = images['West Ham United FC']
     team1.prepend(image1)
   }
