@@ -17,14 +17,19 @@ header {
   text-align: center;
 }
 
+img {
+  width: 700px;
+}
+
 section {
   margin-top: 1200px;
   text-align: center;
-  ;
 }
 
-p .img {
-  max-width: 300px;
+.main {
+  max-width: 400px;
   display: flex;
 }
+
+
 
