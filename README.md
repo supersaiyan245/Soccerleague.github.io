@@ -4,7 +4,8 @@ Website link: https://github.com/supersaiyan245/Soccerleague.github.io
 Project Description:
 This website shows the top 5 teams in England's Premier League at any point in the season
 
-API and Data Sample
+API and Data Sample: 
+
  "standings": [
         {
             "stage": "REGULAR_SEASON",
