@@ -4,6 +4,16 @@ Website link: https://github.com/supersaiyan245/Soccerleague.github.io
 Project Description:
 This website shows the top 5 teams in England's Premier League at any point in the season
 
+MVP
+  <ul>
+    <li>Used HTML, CSS, and JavaScript.</li>
+    <li>Style page using Flexbox</li>
+    <li>Implement Responsive design for other devices</li>
+    <li> Import team ranking data for API to page</li>
+    <li> Rank the Top 5 teams</li>
+    <li> Show images of the Top 5 teams in the League</li>
+  </ul>
+
 API and Data Sample: 
 
  "standings": [
@@ -50,10 +60,8 @@ API and Data Sample:
 Wireframes
 https://www.figma.com/file/jFdd1ghwnxtT2k32hLq7Uv/Untitled?node-id=0%3A1
 
-MVP
-  <ul>
-    <li>Used HTML, CSS, and JavaScript.</li>
-    <li>Styled page using Flexbox</li>
-    <li>Responsive design used for other devices</li>
-    <li> Import team ranking data to page</li>
-  </ul>
+Code Snippet:
+
+let determineFirstPlace = (league) => {
+  let position = league.standings[0].table;
+  let rank1 = position[0].team.name;
