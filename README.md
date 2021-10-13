@@ -66,3 +66,13 @@ let determineFirstPlace = (league) => {
   let position = league.standings[0].table;
   let rank1 = position[0].team.name;
 
+TimeFrames
+|Componenet| |Estimated Time| Time Invested |
+| - - - | : - - -:| : - - - : |
+HTML and Javascript Structure |	9 hrs | 9hrs |
+API call |	3 hrs | 3 hrs |
+Incorporating Flexbox | 3 hr | 2 hrs |
+Styling page with CSS | 9 hrs |  5hrs  |
+Setting and Styling Media Queries | 6hrs | 4 hrs |
+Styling Background Image |  3 hrs | 30 mins |
+Total | 44 hrs and 30 mins
