@@ -1,9 +1,4 @@
-.background {
-  background-image: url("https://s.abcnews.com/images/Sports/WireAP_0692e035b79440cdad96070d3c8294ba_16x9_992.jpg");
-  background-repeat: no-repeat;
-  background-position-y: 150px, center;
-  background-size: 100%;
-}
+
 
 h2 {
   text-align: center;
@@ -27,6 +22,8 @@ img {
   width: 700px;
   object-fit: cover;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 section {
@@ -34,16 +31,18 @@ section {
   text-align: center;
 }
 
-.main {
-  max-width: 400px;
-  display: flex;
+.background {
+  background-image: url("https://s.abcnews.com/images/Sports/WireAP_0692e035b79440cdad96070d3c8294ba_16x9_992.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 150px, center;
+  background-size: 100%;
 }
 
 @media screen and (max-width: 500px) {
   .background {
     background-size: contain;
     background-position-y: 150px center;
-    width: 100%;
+    max-width: 100%;
   }
   h3 {
     padding-top: 50px;
@@ -53,7 +52,7 @@ section {
   }
   img {
     align-items: center;
-    max-width: 500px;
+    max-width: fit-content;
   }
   section {
     margin-top: 300px;
