@@ -1,5 +1,5 @@
 The Top 5 Soccer Teams England
-Website link: https://github.com/supersaiyan245/Soccerleague.github.io
+Website link: https://supersaiyan245.github.io/Soccerleague.github.io/
 
 Project Description:
 This website shows the top 5 teams in England's Premier League at any point in the season
@@ -65,3 +65,4 @@ Code Snippet:
 let determineFirstPlace = (league) => {
   let position = league.standings[0].table;
   let rank1 = position[0].team.name;
+
