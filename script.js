@@ -201,31 +201,31 @@ const determineFourthPlace = (league) => {
     team4.append(image4);
   } else if (rank4 === 'Manchester City FC') {
     image4.src = images['Manchester City FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Manchester United FC') {
     image4.src = images['Manchester United FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Everton FC') {
     image4.src = images['Everton FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Brighton & Hove Albion FC') {
     image4.src = images['Brighton & Hove Albion FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Brentford FC') {
     image4.src = images['Brentford FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Tottenham Hotspur FC') {
     image4.src = images['Tottenham FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'West Ham United FC') {
     image4.src = images['West Ham United FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Aston Villa FC') {
     image4.src = images['Aston Villa FC']
-    team4.prepend(image4)
+    team4.append(image4)
   } else if (rank4 === 'Arsenal FC') {
     image4.src = images['Arsenal FC']
-    team4.prepend(image4)
+    team4.append(image4)
   }
 };
 
@@ -241,30 +241,30 @@ const determineFifthPlace = (league) => {
     team5.append(image5);
   } else if (rank5 === 'Manchester City FC') {
     image5.src = images['Manchester City FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Manchester United FC') {
     image5.src = images['Manchester United FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Everton FC') {
     image5.src = images['Everton FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Brighton & Hove Albion FC') {
     image5.src = images['Brighton & Hove Albion FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Brentford FC') {
     image5.src = images['Brentford FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Tottenham Hotspur FC') {
     image5.src = images['Tottenham FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'West Ham United FC') {
     image5.src = images['West Ham United FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Aston Villa FC') {
     image5.src = images['Aston Villa FC']
-    team5.prepend(image5)
+    team5.append(image5)
   } else if (rank5 === 'Arsenal FC') {
     image5.src = images['Arsenal FC']
-    team5.prepend(image5)
+    team5.append(image5)
   }
 };
