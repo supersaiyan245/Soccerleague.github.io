@@ -4,6 +4,7 @@ Write functions for a first place to a 5th place team
 */
 
 const newLocal = 'https://api.football-data.org/v2/competitions/2021/standings';
+const highlightVideo = 'https://www.scorebat.com/video-api/v3/';
   fetch(newLocal, {
     headers: {
       'X-Auth-Token': '49f98870ef244fa5b61b175735463b0c'
@@ -18,9 +19,15 @@ const newLocal = 'https://api.football-data.org/v2/competitions/2021/standings';
       determineThirdPlace(resJSON);
       determineFourthPlace(resJSON);
       determineFifthPlace(resJSON);
-      console.log(resJSON);
     })
-
+  fetch(highlightVideo)
+    .then((res) => {
+        return res.json()
+    })
+    .then((resJSON) => {
+      console.log(resJSON)
+      showFirstPlaceTeamHighlight(resJSON)
+    })
 const images = {
   'Chelsea FC': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmC4qhtmPhNFg41YUD9PAYCWloP51x1r2XVw&usqp=CAU',
   'Liverpool FC': 'https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/18/thumb_117150_default_news_size_5.jpeg',
@@ -35,62 +42,72 @@ const images = {
   'Arsenal FC': 'https://s.hs-data.com/bilder/teamfotos/640x360/555.jpg',
 }
   
-const team1 = document.getElementById('team1');
+const team1 = document.querySelector('.firstteam');
 const image1 = document.createElement('img');
 const teamName1 = document.querySelector('.tteam1');
-const team2 = document.getElementById('team2');
+const team2 = document.querySelector('.secondteam');
 const image2 = document.createElement('img');
 const teamName2 = document.querySelector('.tteam2');
-const team3 = document.getElementById('team3');
+const team3 = document.querySelector('.thirdteam');
 const image3 = document.createElement('img');
 const teamName3 = document.querySelector('.tteam3');
-const team4 = document.getElementById('team4');
+const team4 = document.querySelector('.fourthteam');
 const image4 = document.createElement('img');
 const teamName4 = document.querySelector('.tteam4')
-const team5 = document.getElementById('team5');
+const team5 = document.querySelector('.fifthteam');
 const image5 = document.createElement('img');
 const teamName5 = document.querySelector('.tteam5');
 
 
-let determineFirstPlace = (league) => {
+const determineFirstPlace = (league) => {
   let position = league.standings[0].table;
   let rank1 = position[0].team.name;
   teamName1.innerText = position[0].team.name;
   if (rank1 === "Chelsea FC") {
     image1.src = images['Chelsea FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "Liverpool FC") {
     image1.src = images['Liverpool FC']
-    team1.prepend(image1);
+    team1.append(image1);
   } else if (rank1 === "Manchester City FC") {
     image1.src = images['Manchester City FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "Manchester United FC") {
     image1.src = images['Manchester United FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "Everton FC") {
     image1.src = images['Everton FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "Brighton & Hove Albion FC") {
     image1.src = images['Brighton & Hove Albion FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "Brentford FC") {
     image1.src = images['Brentford FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "Tottenham Hotspur FC") {
     image1.src = images['Tottenham FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === "West Ham United FC") {
     image1.src = images['West Ham United FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === 'Aston Villa FC') {
     image1.src = images['Aston Villa FC']
-    team1.prepend(image1)
+    team1.append(image1)
   } else if (rank1 === 'West Ham United FC') {
     image1.src = images['West Ham United FC']
-    team1.prepend(image1)
+    team1.append(image1)
   }
 };
+
+let showFirstPlaceTeamHighlight = (teams) => {
+  let dataArr = teams.response
+  console.log(dataArr)
+  let PremierLeagueTeams = dataArr.filter(data => data.competition === "ENGLAND: Premier League")
+  console.log(PremierLeagueTeams)
+  // for (let i = data.length - 1; i > Math.floor(data.length / 2); i--){
+
+  // }
+}
 
 const determineSecondPlace = (league) => {
   let position = league.standings[0].table;
